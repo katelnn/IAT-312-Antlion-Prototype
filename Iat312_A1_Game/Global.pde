@@ -435,7 +435,7 @@ void checkObjectives(int level) {
       }
       
        text("Finished the level in under " + formatTime(objectiveLvl1[1]), width/2-50, height/2+50);
-      if(remainingTime <=  objectiveLvl1[1] && lose == false) {
+      if(remainingTime >= objectiveLvl1[1] && lose == false) {
           image(complete, width/2-150,  height/2+15, 50, 50);
       }
       else {
